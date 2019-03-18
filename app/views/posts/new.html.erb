@@ -1,0 +1,7 @@
+<%= form_with(model: @post) do |form| %>
+  <div class="field">
+    <%= form.label :message %>
+    <%= form.rich_text_area :message %>
+  </div>
+  <%= form.submit %>
+<% end %>
